@@ -1,10 +1,10 @@
-###Test Task
+### Test Task
 
  Main
-![alt text](screenshots/gallery.jpg "Main page with converter")
+![alt text](screenshots/gallery.jpg "Main page")
 Actual data
-![alt text](screenshots/onPress.jpg "Page with actual data")
+![alt text](screenshots/onPress.jpg "OnPress")
 Footer
-![alt text](screenshots/modal.jpg "Footer of site")
+![alt text](screenshots/modal.jpg "Modal Page")
 
 
