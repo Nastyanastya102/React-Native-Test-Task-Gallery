@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
+
 import { SafeAreaView, FlatList } from 'react-native';
 
 import { GalleryStyle } from '../styles';
@@ -17,5 +19,9 @@ const Gallery = ({ DATA }) => (
     />
   </SafeAreaView>
 );
+
+Gallery.propTypes = {
+  DATA: PropTypes.arrayOf(PropTypes.object).isRequired
+};
 
 export default Gallery;

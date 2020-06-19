@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import {
   Modal,
   Text,
@@ -49,5 +51,11 @@ const ModalInfo = ({ modalVisible, setModalVisible, title }) => (
       </View>
     </Modal>
 );
+
+ModalInfo.propTypes = {
+  modalVisible: PropTypes.bool.isRequired,
+  setModalVisible: PropTypes.func.isRequired,
+  title: PropTypes.object.isRequired
+};
 
 export default ModalInfo;

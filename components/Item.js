@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+
 import { View, Image, TouchableHighlight } from 'react-native';
 
 import ModalInfo from './Modal';
@@ -29,6 +31,11 @@ const Item = ({ title, img }) => {
     )}
     </View>
   );
+};
+
+Item.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.object.isRequired
 };
 
 export default Item;
