@@ -4,7 +4,6 @@ import {
 
 export const GalleryStyle = StyleSheet.create({
   container: {
-    backgroundColor: '#e6e6fa',
-    width: '100%'
+    backgroundColor: '#e6e6fa'
   }
 });
