@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { SafeAreaView } from 'react-native';
 
 import Gallery from '../components/Gallery';
+
+import { PagesStyle } from '../styles';
 
 const Home = () => {
   const [images, setImages] = useState([]);
@@ -15,9 +18,11 @@ const Home = () => {
   useEffect( () => {
     handleData();
   }, []);
-  
+
   return (
-    <Gallery DATA={images}/>
+    <SafeAreaView style={PagesStyle.container}>
+      <Gallery DATA={images}/>
+    </SafeAreaView>
   )
 };
 

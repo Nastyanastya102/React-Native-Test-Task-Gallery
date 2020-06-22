@@ -1,13 +1,17 @@
 import { ModalStyle } from './Modal';
 import { HeaderStyle } from './Header';
-import { GalleryStyle } from './Gallery';
 import { ItemStyle } from './Item';
-import { AppStyle } from './App';
+import { InputStyle } from './Input';
+import { TabsStyle } from './Tabs';
+import { PagesStyle } from './Pages';
+import { TotalStyle } from './Total';
 
 export {
   ModalStyle,
   HeaderStyle,
-  GalleryStyle,
   ItemStyle,
-  AppStyle
+  InputStyle,
+  TabsStyle,
+  TotalStyle,
+  PagesStyle
 };

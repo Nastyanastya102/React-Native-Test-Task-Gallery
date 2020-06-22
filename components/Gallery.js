@@ -1,25 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SafeAreaView, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 
-import { GalleryStyle } from '../styles';
 import Item from './Item';
+import Total from './Total';
 
-const Gallery = ({ DATA }) => (
-  <SafeAreaView style={GalleryStyle.container}>
+const Gallery = ({ DATA, setPage, page, total }) => {
+
+  const onEnd = () => {
+    setPage && setPage(page + 1);
+  };
+
+  return (
     <FlatList
       numColumns={2}
       showsVerticalScrollIndicator={true}
       showsHorizontalScrollIndicator={false}
+      onEndReachedThreshold={0.5}
+      onEndReached={onEnd}
+      ListHeaderComponent= {() => <Total total={total}/>}
       data={DATA}
       renderItem={({ item }) => <Item title={item} img={item.urls.regular}/>}
-      keyExtractor={item => item.id}
-    />   
-  </SafeAreaView>
-);
+      keyExtractor={(item, index) => item.id + index}
+    />
+  );
+};
 
 Gallery.propTypes = {
-  DATA: PropTypes.arrayOf(PropTypes.object).isRequired
+  setPage: PropTypes.func,
+  page: PropTypes.number,
+  total: PropTypes.number,
+  DATA: PropTypes.arrayOf(PropTypes.object)
 };
 
 export default Gallery;

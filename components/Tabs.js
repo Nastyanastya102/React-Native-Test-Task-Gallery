@@ -3,16 +3,15 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Image } from 'react-native';
 
 import Home from '../screens/Home';
-import Details from '../screens/Details';
+import Search from '../screens/Search';
 
-import { TabsStyle } from '../styles/Tabs';
+import { TabsStyle } from '../styles';
 
 const Tab = createBottomTabNavigator();
 
-const Tabs = () => {
-  return (
-    <Tab.Navigator>
-      <Tab.Screen
+const Tabs = () => (
+  <Tab.Navigator>
+    <Tab.Screen
       name="Home"
       component={Home}
       options={{
@@ -21,25 +20,24 @@ const Tabs = () => {
           <Image
             style={TabsStyle.img}
             source={require('../assets/home.png')}
-        />
+          />
         )
       }}
     />
-      <Tab.Screen
-      name="Details"
-      component={Details}
+    <Tab.Screen
+      name="Search"
+      component={Search}
       options={{
-        tabBarLabel: "Details",
+        tabBarLabel: "Search",
         tabBarIcon: () => (
           <Image
             style={TabsStyle.img}
-            source={require('../assets/help.png')}
-        />
+            source={require('../assets/search.png')}
+          />
         )
       }}
-      />
-    </Tab.Navigator>
-  );
-};
+    />
+  </Tab.Navigator>
+);
 
 export default Tabs;

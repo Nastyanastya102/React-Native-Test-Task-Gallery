@@ -9,12 +9,13 @@ export const HeaderStyle = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     paddingHorizontal: 10,
-    paddingVertical: 20
+    paddingVertical: 15
   },
   title: {
-    fontSize: 20,
+    fontSize: 17,
     color: '#fff',
-    textTransform: 'uppercase'
+    textTransform: 'uppercase',
+    fontWeight: '800'
   },
   img: {
     width: 25,

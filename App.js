@@ -7,8 +7,6 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Tabs from './components/Tabs';
 import Header from './components/Header';
 
-import { AppStyle } from './styles';
-
 const Stack = createStackNavigator();
 const App = () => {
   const [loader, setLoader] = useState(true);
