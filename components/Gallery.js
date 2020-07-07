@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import { FlatList } from 'react-native';
 
 import Item from './Item';
-import Total from './Total';
 
-const Gallery = ({ DATA, setPage, page, total }) => {
+const Gallery = ({ DATA, setPage, page, total, navigation }) => {
 
   const onEnd = () => {
     setPage && setPage(page + 1);
@@ -18,9 +17,8 @@ const Gallery = ({ DATA, setPage, page, total }) => {
       showsHorizontalScrollIndicator={false}
       onEndReachedThreshold={0.5}
       onEndReached={onEnd}
-      ListHeaderComponent= {() => <Total total={total}/>}
       data={DATA}
-      renderItem={({ item }) => <Item title={item} img={item.urls.regular}/>}
+      renderItem={({ item }) => <Item title={item} img={item.urls.regular} navigation={navigation}/>}
       keyExtractor={(item, index) => item.id + index}
     />
   );

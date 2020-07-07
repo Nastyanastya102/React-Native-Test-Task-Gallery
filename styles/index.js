@@ -5,6 +5,8 @@ import { InputStyle } from './Input';
 import { TabsStyle } from './Tabs';
 import { PagesStyle } from './Pages';
 import { TotalStyle } from './Total';
+import { DetailsStyle } from './Details';
+import { ContactStyle } from './Contact';
 
 export {
   ModalStyle,
@@ -13,5 +15,7 @@ export {
   InputStyle,
   TabsStyle,
   TotalStyle,
-  PagesStyle
+  PagesStyle,
+  DetailsStyle,
+  ContactStyle
 };

@@ -6,16 +6,19 @@ import ModalInfo from './Modal';
 
 import { ItemStyle } from '../styles';
 
-const Item = ({ title, img }) => {
+const Item = ({ title, img, navigation }) => {
   const [modalVisible, setModalVisible] = useState(false);
 
   return (
     <View style={ItemStyle.item}>
       <TouchableHighlight
         style={ItemStyle.openButton}
-        onPress={() => {
-          setModalVisible(true);
+        onLongPress={() => {
+          navigation && navigation.push('Details', {
+            item: title,
+          })
         }}
+        onPress={() => setModalVisible(true)}
       >
       <Image
         style={ItemStyle.img}
