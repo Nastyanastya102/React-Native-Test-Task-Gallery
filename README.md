@@ -1,13 +1,13 @@
-### Test Task
-
-## IOS View
-![alt text](screenshots/main_ios.PNG "Main page")
-![alt text](screenshots/modal_ios.PNG "Modal Page")
-![alt text](screenshots/full_image_ios.PNG "Empty search input")
-![alt text](screenshots/contacts_ios.PNG "Search result")
+# Test Task
 
 ## Andrios View
-![alt text](screenshots/main_android.PNG "Main page")
-![alt text](screenshots/modal_android.PNG "Modal Page")
-![alt text](screenshots/full_image_android.PNG "Empty search input")
-![alt text](screenshots/contacts_android.PNG "Search result")
+<img src="https://github.com/Nastyanastya102/React-Native-Test-Task-Gallery/blob/master/screenshots/main_android.png" width="400" height="710" title="Github Logo">
+<img src="https://github.com/Nastyanastya102/React-Native-Test-Task-Gallery/blob/master/screenshots/modal_android.png" width="400" height="710" title="Github Logo">
+<img src="https://github.com/Nastyanastya102/React-Native-Test-Task-Gallery/blob/master/screenshots/full_image_android.png" width="400" height="710" title="Github Logo">
+<img src="https://github.com/Nastyanastya102/React-Native-Test-Task-Gallery/blob/master/screenshots/contacts_android.png" width="400" height="710" title="Github Logo">
+
+## IOS View
+<img src="https://github.com/Nastyanastya102/React-Native-Test-Task-Gallery/blob/master/screenshots/main_ios.png" width="400" height="710" title="Github Logo">
+<img src="https://github.com/Nastyanastya102/React-Native-Test-Task-Gallery/blob/master/screenshots/modal_ios.png" width="400" height="710" title="Github Logo">
+<img src="https://github.com/Nastyanastya102/React-Native-Test-Task-Gallery/blob/master/screenshots/full_image_ios.png" width="400" height="710" title="Github Logo">
+<img src="https://github.com/Nastyanastya102/React-Native-Test-Task-Gallery/blob/master/screenshots/contacts_ios.png" width="400" height="710" title="Github Logo">
